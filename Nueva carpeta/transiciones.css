@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin-top: 4rems ;   
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #fff;
+}
+section{
+    display: flex;
+    width: 700px;
+    height: 500px;
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition:  .5s ease;
+}
+section img:hover{
+    cursor:crosshair;
+    width: 300px;
+    filter: contrast(120%);
+}
